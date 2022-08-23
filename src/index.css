@@ -39,24 +39,17 @@ li {
 
 .heading h1 {
   margin-left: 10rem;
-  font-family:
-    "Lucida Sans",
-    "Lucida Sans Regular",
-    "Lucida Grande",
-    "Lucida Sans Unicode",
-    Geneva,
-    Verdana,
-    sans-serif;
+  font-family: "Lucida Sans", sans-serif;
   font-weight: 600;
   font-size: 32px;
 }
 
-.list {
+#list {
   margin-left: 5rem;
   width: 100%;
 }
 
-.items {
+#items {
   border: 1px solid black;
   margin-right: 10rem;
   padding-right: 10rem;
@@ -65,7 +58,7 @@ li {
   padding-bottom: 1rem;
 }
 
-.items li {
+#items li {
   line-height: 32px;
   font-size: 20px;
   border: 1px solid black;
