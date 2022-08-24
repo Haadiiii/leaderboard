@@ -2,7 +2,7 @@
 
 # Leaderboard
 
-> Description the project.
+> the leaderboard website that shows the names and positions of the leading competitors in a competition. Build with HTML CSS and JavaScript.
 
 
 ## Built With
@@ -39,14 +39,18 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
+👤 **HaaDiiii**
+
+- GitHub: [@Haadiiii](https://github.com/Haadiiii)
+- Twitter: [@HaaDiii_99](https://twitter.com/HaaDiii_99)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/hamid-ali-01a872213/)
 
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Haadiiii/leaderboard/issues).
 
 ## Show your support
 
