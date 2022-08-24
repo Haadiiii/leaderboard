@@ -13,20 +13,32 @@
         <div class="list-items">
           <div class="heading">
             <h1>Recent scores</h1>
-            <button>Refresh</button>
+            <button id="button">Refresh</button>
           </div>
-          <div id="list">
-            
-          </div>
+          <div id="list"></div>
         </div>
 
         <div class="add">
           <h1>Add your score</h1>
-          <input class="name" type="text" placeholder="Name" />
-          <input class="score" type="text" placeholder="Score" />
-          <div class="btn">
-            <button>submit</button>
-          </div>
+          <form id="form">
+            <input
+              id="user"
+              type="text"
+              name="user"
+              placeholder="Enter your name here"
+              required
+            />
+            <input
+              id="score"
+              type="text"
+              name="score"
+              placeholder="type score"
+              required
+            />
+            <div class="btn">
+              <button type="submit" id="btn">submit</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
