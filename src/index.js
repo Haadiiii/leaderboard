@@ -4,12 +4,9 @@ import { list, button, form } from './modules/Elements.js';
 const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/F320Bghj02145Qwer76T/scores/';
 
 button.addEventListener('click', () => {
-  fetch(url,
-    {
-      method: 'GET',
-
-    })
-
+  fetch(url, {
+    method: 'GET',
+  })
     .then((res) => res.json())
     .then((data) => {
       list.innerHTML = '';
@@ -45,15 +42,15 @@ form.addEventListener('submit', (e) => {
   };
   console.log(payLoadObject);
 
-  fetch(url,
-    {
-      method: 'POST',
-      headers: { 'Content-type': 'application/json' },
-      body: JSON.stringify(payLoadObject),
-    })
-
+  fetch(url, {
+    method: 'POST',
+    headers: { 'Content-type': 'application/json' },
+    body: JSON.stringify(payLoadObject),
+  })
     .then((res) => res.json())
     .then((data) => {
       console.log('data', data);
     });
+  user.value = '';
+  score.value = '';
 });
