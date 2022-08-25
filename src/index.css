@@ -1,6 +1,5 @@
 body {
-  text-align: center;
-  background-color: #d3d3d3;
+  /* text-align: center; */
 }
 
 li {
@@ -8,10 +7,11 @@ li {
 }
 
 .main-head {
-  margin-left: -60rem;
-  margin-top: 10rem;
-  font-family: Georgia, serif;
-  font-size: 60px;
+  margin-left: 30rem;
+  margin-top: 5rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 120px;
+  color: rgb(211, 120, 227);
 }
 
 .head {
@@ -27,9 +27,13 @@ li {
 .heading button {
   margin-top: 1.5rem;
   height: 30px;
-  padding: 5px 10px 10px 10px;
+  padding: 10px 15px 25px 15px;
   font-size: 15px;
   font-weight: 600;
+  background-color: rgb(188, 121, 243);
+  border-radius: 1rem;
+  border-color: rgb(214, 153, 226);
+  color: #f8f6f6;
 }
 
 .list-items {
@@ -42,12 +46,35 @@ li {
   font-family: "Lucida Sans", sans-serif;
   font-weight: 600;
   font-size: 32px;
+  color: rgb(211, 120, 227);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  background-color: rgb(48, 170, 201);
+  margin-left: 5rem;
+  height: 2rem;
+  padding-top: 1rem;
+  font-size: 20px;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-weight: 800;
+  color: #4b4444;
+}
+
+.nav :nth-child(1) {
+  margin-left: 1rem;
+}
+
+.nav :nth-child(2) {
+  margin-right: 9rem;
 }
 
 #list {
   margin-left: 5rem;
-  width: 100%;
   font-size: 10px;
+  margin-top: -1rem;
 }
 
 .items {
@@ -56,13 +83,21 @@ li {
   border: 1px solid black;
   padding-right: 10rem;
   width: 80%;
-  background-color: aliceblue;
-  padding-bottom: 1rem;
   font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
 }
 
 .items h1 {
   padding-left: 2rem;
+}
+
+.user {
+  width: 100%;
+}
+
+.score {
+  margin-left: 8rem;
+  text-align: start;
 }
 
 .add {
@@ -72,6 +107,16 @@ li {
   gap: 1rem;
 }
 
+.add h1 {
+  font-family: cursive;
+  font-weight: 800;
+  font-size: 44px;
+}
+
+.add-score {
+  color: rgb(211, 120, 227);
+}
+
 #form {
   display: flex;
   flex-direction: column;
@@ -79,18 +124,31 @@ li {
 }
 
 #user {
-  padding-top: 10px;
+  padding-top: 20px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: rgb(214, 153, 226);
 }
 
 #score {
-  padding-top: 10px;
+  padding-top: 20px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: rgb(214, 153, 226);
 }
 
 .add div {
-  margin-left: 10rem;
+  margin-left: 18rem;
 }
 
 .btn button {
-  padding: 5px 10px 5px 10px;
+  padding: 10px 25px 10px 25px;
   font-size: 17px;
+  background-color: rgb(188, 121, 243);
+  border-radius: 1rem;
+  border-color: rgb(214, 153, 226);
+  color: #fdf5f5;
+  font-weight: 600;
 }
