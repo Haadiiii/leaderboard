@@ -1,27 +1,26 @@
 import './index.css';
 import { list, button, form } from './modules/Elements.js';
 
-const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/F320Bghj02145Qwer76T/scores/';
+const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/bvRoUK8AQ25sBMa8EMPl/scores/';
 
-button.addEventListener('click', () => {
-  fetch(url, {
-    method: 'GET',
-  })
-    .then((res) => res.json())
-    .then((data) => {
-      list.innerHTML = '';
-      return data.result.forEach((el) => {
-        const div = document.createElement('div');
-        const user = document.createElement('h1');
-        const scores = document.createElement('h1');
-        div.className = 'items';
-        user.innerHTML = el.user;
-        scores.innerHTML = el.score;
-        div.append(user);
-        div.append(scores);
-        list.append(div);
-      });
-    });
+button.addEventListener('click', async () => {
+  list.innerHTML = '';
+  const data = await fetch(url);
+  const { result } = await data.json();
+  result.map((data) => {
+    const div = document.createElement('div');
+    const user = document.createElement('h1');
+    const scores = document.createElement('h1');
+    div.className = 'items';
+    user.innerHTML = data.user;
+    user.className = 'user';
+    scores.className = 'score';
+    scores.innerHTML = data.score;
+    div.append(user);
+    div.append(scores);
+    list.append(div);
+    return result;
+  });
 });
 
 form.addEventListener('submit', (e) => {
@@ -29,8 +28,6 @@ form.addEventListener('submit', (e) => {
 
   const formData = new FormData(form);
   const payLoad = formData;
-  console.log(payLoad);
-  console.log('this shown content', ...payLoad);
 
   const extractedPayLoad = [...payLoad];
   const userValue = extractedPayLoad[0][1];
@@ -40,7 +37,6 @@ form.addEventListener('submit', (e) => {
     user: userValue,
     score: scoreValue,
   };
-  console.log(payLoadObject);
 
   fetch(url, {
     method: 'POST',
